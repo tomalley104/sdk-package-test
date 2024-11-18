@@ -1,0 +1,298 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "sdk_framework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "sdk_framework"
+      },
+      {
+        "kind": "Import",
+        "name": "PlayHelpers",
+        "printedName": "PlayHelpers",
+        "declKind": "Import",
+        "moduleName": "sdk_framework",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PlayDevices",
+        "printedName": "PlayDevices",
+        "declKind": "Import",
+        "moduleName": "sdk_framework",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TestSDK",
+        "printedName": "TestSDK",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TestSDK",
+                "printedName": "sdk_framework.TestSDK",
+                "usr": "s:13sdk_framework7TestSDKC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13sdk_framework7TestSDKC6sharedACvpZ",
+            "mangledName": "$s13sdk_framework7TestSDKC6sharedACvpZ",
+            "moduleName": "sdk_framework",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TestSDK",
+                    "printedName": "sdk_framework.TestSDK",
+                    "usr": "s:13sdk_framework7TestSDKC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13sdk_framework7TestSDKC6sharedACvgZ",
+                "mangledName": "$s13sdk_framework7TestSDKC6sharedACvgZ",
+                "moduleName": "sdk_framework",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "printVersion",
+            "printedName": "printVersion()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13sdk_framework7TestSDKC12printVersionyyFZ",
+            "mangledName": "$s13sdk_framework7TestSDKC12printVersionyyFZ",
+            "moduleName": "sdk_framework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "version",
+            "printedName": "version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13sdk_framework7TestSDKC7versionSSvp",
+            "mangledName": "$s13sdk_framework7TestSDKC7versionSSvp",
+            "moduleName": "sdk_framework",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13sdk_framework7TestSDKC7versionSSvg",
+                "mangledName": "$s13sdk_framework7TestSDKC7versionSSvg",
+                "moduleName": "sdk_framework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13sdk_framework7TestSDKC7versionSSvs",
+                "mangledName": "$s13sdk_framework7TestSDKC7versionSSvs",
+                "moduleName": "sdk_framework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13sdk_framework7TestSDKC7versionSSvM",
+                "mangledName": "$s13sdk_framework7TestSDKC7versionSSvM",
+                "moduleName": "sdk_framework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "printVersion",
+            "printedName": "printVersion()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13sdk_framework7TestSDKC12printVersionyyF",
+            "mangledName": "$s13sdk_framework7TestSDKC12printVersionyyF",
+            "moduleName": "sdk_framework",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "useToFloatFunctionFromPlayHelpers",
+            "printedName": "useToFloatFunctionFromPlayHelpers(string:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13sdk_framework7TestSDKC33useToFloatFunctionFromPlayHelpers6stringSfSgSS_tF",
+            "mangledName": "$s13sdk_framework7TestSDKC33useToFloatFunctionFromPlayHelpers6stringSfSgSS_tF",
+            "moduleName": "sdk_framework",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13sdk_framework7TestSDKC",
+        "mangledName": "$s13sdk_framework7TestSDKC",
+        "moduleName": "sdk_framework",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/tomomalley\/dev\/Play\/sdk-framework\/sdk-framework\/TestSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 400,
+      "length": 7,
+      "value": "\"1.0.0\""
+    }
+  ]
+}

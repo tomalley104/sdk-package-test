@@ -1,0 +1,18 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios17.4-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name sdk_framework
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_exported import sdk_framework
+@_hasMissingDesignatedInitializers final public class TestSDK {
+  public static let shared: sdk_framework.TestSDK
+  public static func printVersion()
+  final public var version: Swift.String
+  final public func printVersion()
+  final public func useToFloatFunctionFromPlayHelpers(string: Swift.String) -> Swift.Float?
+  @objc deinit
+}
