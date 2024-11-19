@@ -2291,14 +2291,591 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PlaySDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PlaySDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "PlaySDK"
+      },
+      {
+        "kind": "Import",
         "name": "PlaySheets",
         "printedName": "PlaySheets",
         "declKind": "Import",
         "moduleName": "PlaySDK",
         "declAttributes": [
-          "ImplementationOnly",
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PlayGradient",
+        "printedName": "PlayGradient",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "colors",
+            "printedName": "colors",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[UIKit.UIColor]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7PlaySDK0A8GradientV6colorsSaySo7UIColorCGvp",
+            "mangledName": "$s7PlaySDK0A8GradientV6colorsSaySo7UIColorCGvp",
+            "moduleName": "PlaySDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[UIKit.UIColor]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7PlaySDK0A8GradientV6colorsSaySo7UIColorCGvg",
+                "mangledName": "$s7PlaySDK0A8GradientV6colorsSaySo7UIColorCGvg",
+                "moduleName": "PlaySDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "locations",
+            "printedName": "locations",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.NSNumber]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7PlaySDK0A8GradientV9locationsSaySo8NSNumberCGvp",
+            "mangledName": "$s7PlaySDK0A8GradientV9locationsSaySo8NSNumberCGvp",
+            "moduleName": "PlaySDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.NSNumber]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSNumber",
+                        "printedName": "Foundation.NSNumber",
+                        "usr": "c:objc(cs)NSNumber"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7PlaySDK0A8GradientV9locationsSaySo8NSNumberCGvg",
+                "mangledName": "$s7PlaySDK0A8GradientV9locationsSaySo8NSNumberCGvg",
+                "moduleName": "PlaySDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "lastValidHueList",
+            "printedName": "lastValidHueList",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[CoreGraphics.CGFloat?]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "CoreGraphics.CGFloat?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7PlaySDK0A8GradientV16lastValidHueListSay14CoreFoundation7CGFloatVSgGvp",
+            "mangledName": "$s7PlaySDK0A8GradientV16lastValidHueListSay12CoreGraphics7CGFloatVSgGvp",
+            "moduleName": "PlaySDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CoreGraphics.CGFloat?]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "CoreGraphics.CGFloat?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGFloat",
+                            "printedName": "CoreGraphics.CGFloat",
+                            "usr": "s:14CoreFoundation7CGFloatV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7PlaySDK0A8GradientV16lastValidHueListSay14CoreFoundation7CGFloatVSgGvg",
+                "mangledName": "$s7PlaySDK0A8GradientV16lastValidHueListSay12CoreGraphics7CGFloatVSgGvg",
+                "moduleName": "PlaySDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "endPoint",
+            "printedName": "endPoint",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGPoint",
+                "printedName": "CoreFoundation.CGPoint",
+                "usr": "c:@S@CGPoint"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7PlaySDK0A8GradientV8endPointSo7CGPointVvp",
+            "mangledName": "$s7PlaySDK0A8GradientV8endPointSo7CGPointVvp",
+            "moduleName": "PlaySDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGPoint",
+                    "printedName": "CoreFoundation.CGPoint",
+                    "usr": "c:@S@CGPoint"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7PlaySDK0A8GradientV8endPointSo7CGPointVvg",
+                "mangledName": "$s7PlaySDK0A8GradientV8endPointSo7CGPointVvg",
+                "moduleName": "PlaySDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "startPoint",
+            "printedName": "startPoint",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGPoint",
+                "printedName": "CoreFoundation.CGPoint",
+                "usr": "c:@S@CGPoint"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7PlaySDK0A8GradientV10startPointSo7CGPointVvp",
+            "mangledName": "$s7PlaySDK0A8GradientV10startPointSo7CGPointVvp",
+            "moduleName": "PlaySDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGPoint",
+                    "printedName": "CoreFoundation.CGPoint",
+                    "usr": "c:@S@CGPoint"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7PlaySDK0A8GradientV10startPointSo7CGPointVvg",
+                "mangledName": "$s7PlaySDK0A8GradientV10startPointSo7CGPointVvg",
+                "moduleName": "PlaySDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CAGradientLayerType",
+                "printedName": "QuartzCore.CAGradientLayerType",
+                "usr": "c:@T@CAGradientLayerType"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7PlaySDK0A8GradientV4typeSo19CAGradientLayerTypeavp",
+            "mangledName": "$s7PlaySDK0A8GradientV4typeSo19CAGradientLayerTypeavp",
+            "moduleName": "PlaySDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CAGradientLayerType",
+                    "printedName": "QuartzCore.CAGradientLayerType",
+                    "usr": "c:@T@CAGradientLayerType"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7PlaySDK0A8GradientV4typeSo19CAGradientLayerTypeavg",
+                "mangledName": "$s7PlaySDK0A8GradientV4typeSo19CAGradientLayerTypeavg",
+                "moduleName": "PlaySDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "scale",
+            "printedName": "scale",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7PlaySDK0A8GradientV5scale14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s7PlaySDK0A8GradientV5scale12CoreGraphics7CGFloatVvp",
+            "moduleName": "PlaySDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7PlaySDK0A8GradientV5scale14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s7PlaySDK0A8GradientV5scale12CoreGraphics7CGFloatVvg",
+                "moduleName": "PlaySDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rotation",
+            "printedName": "rotation",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7PlaySDK0A8GradientV8rotation14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s7PlaySDK0A8GradientV8rotation12CoreGraphics7CGFloatVvp",
+            "moduleName": "PlaySDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7PlaySDK0A8GradientV8rotation14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s7PlaySDK0A8GradientV8rotation12CoreGraphics7CGFloatVvg",
+                "moduleName": "PlaySDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(type:colors:locations:lastValidHueList:startPoint:endPoint:scale:rotation:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PlayGradient",
+                "printedName": "PlaySDK.PlayGradient",
+                "usr": "s:7PlaySDK0A8GradientV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CAGradientLayerType",
+                "printedName": "QuartzCore.CAGradientLayerType",
+                "hasDefaultArg": true,
+                "usr": "c:@T@CAGradientLayerType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[UIKit.UIColor]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.NSNumber]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[CoreGraphics.CGFloat?]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[CoreGraphics.CGFloat?]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "CoreGraphics.CGFloat?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGFloat",
+                            "printedName": "CoreGraphics.CGFloat",
+                            "usr": "s:14CoreFoundation7CGFloatV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGPoint",
+                "printedName": "CoreFoundation.CGPoint",
+                "usr": "c:@S@CGPoint"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGPoint",
+                "printedName": "CoreFoundation.CGPoint",
+                "usr": "c:@S@CGPoint"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7PlaySDK0A8GradientV4type6colors9locations16lastValidHueList10startPoint03endL05scale8rotationACSo19CAGradientLayerTypea_SaySo7UIColorCGSaySo8NSNumberCGSay14CoreFoundation7CGFloatVSgGSgSo7CGPointVA_A2Vtcfc",
+            "mangledName": "$s7PlaySDK0A8GradientV4type6colors9locations16lastValidHueList10startPoint03endL05scale8rotationACSo19CAGradientLayerTypea_SaySo7UIColorCGSaySo8NSNumberCGSay12CoreGraphics7CGFloatVSgGSgSo7CGPointVA_A2Vtcfc",
+            "moduleName": "PlaySDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "applyTo",
+            "printedName": "applyTo(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7PlaySDK0A8GradientV7applyToyySo6UIViewCF",
+            "mangledName": "$s7PlaySDK0A8GradientV7applyToyySo6UIViewCF",
+            "moduleName": "PlaySDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7PlaySDK0A8GradientV",
+        "mangledName": "$s7PlaySDK0A8GradientV",
+        "moduleName": "PlaySDK",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PlaySDK",
+        "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PlaySDK"
       },
       {
         "kind": "Import",
@@ -2329,12 +2906,1484 @@
       },
       {
         "kind": "Import",
-        "name": "PlayNodes",
-        "printedName": "PlayNodes",
+        "name": "PlaySheets",
+        "printedName": "PlaySheets",
         "declKind": "Import",
         "moduleName": "PlaySDK",
         "declAttributes": [
           "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PlayFontDescriptor",
+        "printedName": "PlayFontDescriptor",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(fontType:size:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PlayFontDescriptor",
+                "printedName": "PlaySDK.PlayFontDescriptor",
+                "usr": "s:7PlaySDK0A14FontDescriptorV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FontType",
+                "printedName": "PlaySDK.PlayFontDescriptor.FontType",
+                "usr": "s:7PlaySDK0A14FontDescriptorV0C4TypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGFloat?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7PlaySDK0A14FontDescriptorV8fontType4sizeA2C0cF0O_14CoreFoundation7CGFloatVSgtcfc",
+            "mangledName": "$s7PlaySDK0A14FontDescriptorV8fontType4sizeA2C0cF0O_12CoreGraphics7CGFloatVSgtcfc",
+            "moduleName": "PlaySDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "FontStyle",
+            "printedName": "FontStyle",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "regular",
+                "printedName": "regular",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PlaySDK.PlayFontDescriptor.FontStyle.Type) -> PlaySDK.PlayFontDescriptor.FontStyle",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FontStyle",
+                        "printedName": "PlaySDK.PlayFontDescriptor.FontStyle",
+                        "usr": "s:7PlaySDK0A14FontDescriptorV0C5StyleO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "PlaySDK.PlayFontDescriptor.FontStyle.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "FontStyle",
+                            "printedName": "PlaySDK.PlayFontDescriptor.FontStyle",
+                            "usr": "s:7PlaySDK0A14FontDescriptorV0C5StyleO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7PlaySDK0A14FontDescriptorV0C5StyleO7regularyA2EmF",
+                "mangledName": "$s7PlaySDK0A14FontDescriptorV0C5StyleO7regularyA2EmF",
+                "moduleName": "PlaySDK"
+              },
+              {
+                "kind": "Var",
+                "name": "italic",
+                "printedName": "italic",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PlaySDK.PlayFontDescriptor.FontStyle.Type) -> PlaySDK.PlayFontDescriptor.FontStyle",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FontStyle",
+                        "printedName": "PlaySDK.PlayFontDescriptor.FontStyle",
+                        "usr": "s:7PlaySDK0A14FontDescriptorV0C5StyleO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "PlaySDK.PlayFontDescriptor.FontStyle.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "FontStyle",
+                            "printedName": "PlaySDK.PlayFontDescriptor.FontStyle",
+                            "usr": "s:7PlaySDK0A14FontDescriptorV0C5StyleO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7PlaySDK0A14FontDescriptorV0C5StyleO6italicyA2EmF",
+                "mangledName": "$s7PlaySDK0A14FontDescriptorV0C5StyleO6italicyA2EmF",
+                "moduleName": "PlaySDK"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PlaySDK.PlayFontDescriptor.FontStyle?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FontStyle",
+                        "printedName": "PlaySDK.PlayFontDescriptor.FontStyle",
+                        "usr": "s:7PlaySDK0A14FontDescriptorV0C5StyleO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:7PlaySDK0A14FontDescriptorV0C5StyleO8rawValueAESgSS_tcfc",
+                "mangledName": "$s7PlaySDK0A14FontDescriptorV0C5StyleO8rawValueAESgSS_tcfc",
+                "moduleName": "PlaySDK",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7PlaySDK0A14FontDescriptorV0C5StyleO8rawValueSSvp",
+                "mangledName": "$s7PlaySDK0A14FontDescriptorV0C5StyleO8rawValueSSvp",
+                "moduleName": "PlaySDK",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV0C5StyleO8rawValueSSvg",
+                    "mangledName": "$s7PlaySDK0A14FontDescriptorV0C5StyleO8rawValueSSvg",
+                    "moduleName": "PlaySDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "allCases",
+                "printedName": "allCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PlaySDK.PlayFontDescriptor.FontStyle]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FontStyle",
+                        "printedName": "PlaySDK.PlayFontDescriptor.FontStyle",
+                        "usr": "s:7PlaySDK0A14FontDescriptorV0C5StyleO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7PlaySDK0A14FontDescriptorV0C5StyleO8allCasesSayAEGvpZ",
+                "mangledName": "$s7PlaySDK0A14FontDescriptorV0C5StyleO8allCasesSayAEGvpZ",
+                "moduleName": "PlaySDK",
+                "static": true,
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[PlaySDK.PlayFontDescriptor.FontStyle]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "FontStyle",
+                            "printedName": "PlaySDK.PlayFontDescriptor.FontStyle",
+                            "usr": "s:7PlaySDK0A14FontDescriptorV0C5StyleO"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV0C5StyleO8allCasesSayAEGvgZ",
+                    "mangledName": "$s7PlaySDK0A14FontDescriptorV0C5StyleO8allCasesSayAEGvgZ",
+                    "moduleName": "PlaySDK",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:7PlaySDK0A14FontDescriptorV0C5StyleO",
+            "mangledName": "$s7PlaySDK0A14FontDescriptorV0C5StyleO",
+            "moduleName": "PlaySDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "enumRawTypeName": "String",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CaseIterable",
+                "printedName": "CaseIterable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "AllCases",
+                    "printedName": "AllCases",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[PlaySDK.PlayFontDescriptor.FontStyle]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "FontStyle",
+                            "printedName": "PlaySDK.PlayFontDescriptor.FontStyle",
+                            "usr": "s:7PlaySDK0A14FontDescriptorV0C5StyleO"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:s12CaseIterableP",
+                "mangledName": "$ss12CaseIterableP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "FontType",
+            "printedName": "FontType",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "raw",
+                "printedName": "raw",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PlaySDK.PlayFontDescriptor.FontType.Type) -> (Swift.String, PlaySDK.PlayFontDescriptor.DynamicTypography) -> PlaySDK.PlayFontDescriptor.FontType",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String, PlaySDK.PlayFontDescriptor.DynamicTypography) -> PlaySDK.PlayFontDescriptor.FontType",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "FontType",
+                            "printedName": "PlaySDK.PlayFontDescriptor.FontType",
+                            "usr": "s:7PlaySDK0A14FontDescriptorV0C4TypeO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(Swift.String, PlaySDK.PlayFontDescriptor.DynamicTypography)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "DynamicTypography",
+                                "printedName": "PlaySDK.PlayFontDescriptor.DynamicTypography",
+                                "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "PlaySDK.PlayFontDescriptor.FontType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "FontType",
+                            "printedName": "PlaySDK.PlayFontDescriptor.FontType",
+                            "usr": "s:7PlaySDK0A14FontDescriptorV0C4TypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7PlaySDK0A14FontDescriptorV0C4TypeO3rawyAESS_AC17DynamicTypographyVtcAEmF",
+                "mangledName": "$s7PlaySDK0A14FontDescriptorV0C4TypeO3rawyAESS_AC17DynamicTypographyVtcAEmF",
+                "moduleName": "PlaySDK"
+              },
+              {
+                "kind": "Var",
+                "name": "system",
+                "printedName": "system",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PlaySDK.PlayFontDescriptor.FontType.Type) -> (PlaySDK.PlayFontDescriptor.FontStyle, UIKit.UIFont.Weight, UIKit.UIFont.Width, UIKit.UIFontDescriptor.SystemDesign) -> PlaySDK.PlayFontDescriptor.FontType",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(PlaySDK.PlayFontDescriptor.FontStyle, UIKit.UIFont.Weight, UIKit.UIFont.Width, UIKit.UIFontDescriptor.SystemDesign) -> PlaySDK.PlayFontDescriptor.FontType",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "FontType",
+                            "printedName": "PlaySDK.PlayFontDescriptor.FontType",
+                            "usr": "s:7PlaySDK0A14FontDescriptorV0C4TypeO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(PlaySDK.PlayFontDescriptor.FontStyle, UIKit.UIFont.Weight, UIKit.UIFont.Width, UIKit.UIFontDescriptor.SystemDesign)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "FontStyle",
+                                "printedName": "PlaySDK.PlayFontDescriptor.FontStyle",
+                                "usr": "s:7PlaySDK0A14FontDescriptorV0C5StyleO"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Weight",
+                                "printedName": "UIKit.UIFont.Weight",
+                                "usr": "c:@T@UIFontWeight"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Width",
+                                "printedName": "UIKit.UIFont.Width",
+                                "usr": "c:@T@UIFontWidth"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "SystemDesign",
+                                "printedName": "UIKit.UIFontDescriptor.SystemDesign",
+                                "usr": "c:@T@UIFontDescriptorSystemDesign"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "PlaySDK.PlayFontDescriptor.FontType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "FontType",
+                            "printedName": "PlaySDK.PlayFontDescriptor.FontType",
+                            "usr": "s:7PlaySDK0A14FontDescriptorV0C4TypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7PlaySDK0A14FontDescriptorV0C4TypeO6systemyAeC0C5StyleO_So12UIFontWeightaSo0H5WidthaSo0hD12SystemDesignatcAEmF",
+                "mangledName": "$s7PlaySDK0A14FontDescriptorV0C4TypeO6systemyAeC0C5StyleO_So12UIFontWeightaSo0H5WidthaSo0hD12SystemDesignatcAEmF",
+                "moduleName": "PlaySDK"
+              },
+              {
+                "kind": "Var",
+                "name": "systemStyle",
+                "printedName": "systemStyle",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PlaySDK.PlayFontDescriptor.FontType.Type) -> (UIKit.UIFont.TextStyle, PlaySDK.PlayFontDescriptor.FontStyle, UIKit.UIFont.Weight?, UIKit.UIFont.Width, UIKit.UIFontDescriptor.SystemDesign) -> PlaySDK.PlayFontDescriptor.FontType",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(UIKit.UIFont.TextStyle, PlaySDK.PlayFontDescriptor.FontStyle, UIKit.UIFont.Weight?, UIKit.UIFont.Width, UIKit.UIFontDescriptor.SystemDesign) -> PlaySDK.PlayFontDescriptor.FontType",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "FontType",
+                            "printedName": "PlaySDK.PlayFontDescriptor.FontType",
+                            "usr": "s:7PlaySDK0A14FontDescriptorV0C4TypeO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(UIKit.UIFont.TextStyle, PlaySDK.PlayFontDescriptor.FontStyle, UIKit.UIFont.Weight?, UIKit.UIFont.Width, UIKit.UIFontDescriptor.SystemDesign)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "TextStyle",
+                                "printedName": "UIKit.UIFont.TextStyle",
+                                "usr": "c:@T@UIFontTextStyle"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "FontStyle",
+                                "printedName": "PlaySDK.PlayFontDescriptor.FontStyle",
+                                "usr": "s:7PlaySDK0A14FontDescriptorV0C5StyleO"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "UIKit.UIFont.Weight?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Weight",
+                                    "printedName": "UIKit.UIFont.Weight",
+                                    "usr": "c:@T@UIFontWeight"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Width",
+                                "printedName": "UIKit.UIFont.Width",
+                                "usr": "c:@T@UIFontWidth"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "SystemDesign",
+                                "printedName": "UIKit.UIFontDescriptor.SystemDesign",
+                                "usr": "c:@T@UIFontDescriptorSystemDesign"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "PlaySDK.PlayFontDescriptor.FontType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "FontType",
+                            "printedName": "PlaySDK.PlayFontDescriptor.FontType",
+                            "usr": "s:7PlaySDK0A14FontDescriptorV0C4TypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7PlaySDK0A14FontDescriptorV0C4TypeO11systemStyleyAESo010UIFontTextG0a_AC0cG0OSo0H6WeightaSgSo0H5WidthaSo0hD12SystemDesignatcAEmF",
+                "mangledName": "$s7PlaySDK0A14FontDescriptorV0C4TypeO11systemStyleyAESo010UIFontTextG0a_AC0cG0OSo0H6WeightaSgSo0H5WidthaSo0hD12SystemDesignatcAEmF",
+                "moduleName": "PlaySDK"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:7PlaySDK0A14FontDescriptorV0C4TypeO",
+            "mangledName": "$s7PlaySDK0A14FontDescriptorV0C4TypeO",
+            "moduleName": "PlaySDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "DynamicTypography",
+            "printedName": "DynamicTypography",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "none",
+                "printedName": "none",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DynamicTypography",
+                    "printedName": "PlaySDK.PlayFontDescriptor.DynamicTypography",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV4noneAEvpZ",
+                "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV4noneAEvpZ",
+                "moduleName": "PlaySDK",
+                "static": true,
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DynamicTypography",
+                        "printedName": "PlaySDK.PlayFontDescriptor.DynamicTypography",
+                        "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV4noneAEvgZ",
+                    "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV4noneAEvgZ",
+                    "moduleName": "PlaySDK",
+                    "static": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeDecl",
+                "name": "Style",
+                "printedName": "Style",
+                "children": [
+                  {
+                    "kind": "Var",
+                    "name": "auto",
+                    "printedName": "auto",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(PlaySDK.PlayFontDescriptor.DynamicTypography.Style.Type) -> PlaySDK.PlayFontDescriptor.DynamicTypography.Style",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Style",
+                            "printedName": "PlaySDK.PlayFontDescriptor.DynamicTypography.Style",
+                            "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV5StyleO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "PlaySDK.PlayFontDescriptor.DynamicTypography.Style.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Style",
+                                "printedName": "PlaySDK.PlayFontDescriptor.DynamicTypography.Style",
+                                "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV5StyleO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV5StyleO4autoyA2GmF",
+                    "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV5StyleO4autoyA2GmF",
+                    "moduleName": "PlaySDK"
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "style",
+                    "printedName": "style",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(PlaySDK.PlayFontDescriptor.DynamicTypography.Style.Type) -> (UIKit.UIFont.TextStyle) -> PlaySDK.PlayFontDescriptor.DynamicTypography.Style",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(UIKit.UIFont.TextStyle) -> PlaySDK.PlayFontDescriptor.DynamicTypography.Style",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Style",
+                                "printedName": "PlaySDK.PlayFontDescriptor.DynamicTypography.Style",
+                                "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV5StyleO"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "TextStyle",
+                                "printedName": "UIKit.UIFont.TextStyle",
+                                "usr": "c:@T@UIFontTextStyle"
+                              }
+                            ]
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "PlaySDK.PlayFontDescriptor.DynamicTypography.Style.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Style",
+                                "printedName": "PlaySDK.PlayFontDescriptor.DynamicTypography.Style",
+                                "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV5StyleO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV5StyleO5styleyAGSo010UIFontTextG0acAGmF",
+                    "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV5StyleO5styleyAGSo010UIFontTextG0acAGmF",
+                    "moduleName": "PlaySDK"
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "title",
+                    "printedName": "title",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV5StyleO5titleSSvp",
+                    "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV5StyleO5titleSSvp",
+                    "moduleName": "PlaySDK",
+                    "declAttributes": [
+                      "AccessControl"
+                    ],
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV5StyleO5titleSSvg",
+                        "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV5StyleO5titleSSvg",
+                        "moduleName": "PlaySDK",
+                        "accessorKind": "get"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "hashValue",
+                    "printedName": "hashValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV5StyleO9hashValueSivp",
+                    "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV5StyleO9hashValueSivp",
+                    "moduleName": "PlaySDK",
+                    "implicit": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV5StyleO9hashValueSivg",
+                        "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV5StyleO9hashValueSivg",
+                        "moduleName": "PlaySDK",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Function",
+                    "name": "hash",
+                    "printedName": "hash(into:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Hasher",
+                        "printedName": "Swift.Hasher",
+                        "paramValueOwnership": "InOut",
+                        "usr": "s:s6HasherV"
+                      }
+                    ],
+                    "declKind": "Func",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV5StyleO4hash4intoys6HasherVz_tF",
+                    "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV5StyleO4hash4intoys6HasherVz_tF",
+                    "moduleName": "PlaySDK",
+                    "implicit": true,
+                    "funcSelfKind": "NonMutating"
+                  },
+                  {
+                    "kind": "Function",
+                    "name": "==",
+                    "printedName": "==(_:_:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Style",
+                        "printedName": "PlaySDK.PlayFontDescriptor.DynamicTypography.Style",
+                        "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV5StyleO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Style",
+                        "printedName": "PlaySDK.PlayFontDescriptor.DynamicTypography.Style",
+                        "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV5StyleO"
+                      }
+                    ],
+                    "declKind": "Func",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV5StyleO2eeoiySbAG_AGtFZ",
+                    "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV5StyleO2eeoiySbAG_AGtFZ",
+                    "moduleName": "PlaySDK",
+                    "static": true,
+                    "implicit": true,
+                    "funcSelfKind": "NonMutating"
+                  }
+                ],
+                "declKind": "Enum",
+                "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV5StyleO",
+                "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV5StyleO",
+                "moduleName": "PlaySDK",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Hashable",
+                    "printedName": "Hashable",
+                    "usr": "s:SH",
+                    "mangledName": "$sSH"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Equatable",
+                    "printedName": "Equatable",
+                    "usr": "s:SQ",
+                    "mangledName": "$sSQ"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeDecl",
+                "name": "BoldVariant",
+                "printedName": "BoldVariant",
+                "children": [
+                  {
+                    "kind": "Var",
+                    "name": "auto",
+                    "printedName": "auto",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(PlaySDK.PlayFontDescriptor.DynamicTypography.BoldVariant.Type) -> (Swift.String) -> PlaySDK.PlayFontDescriptor.DynamicTypography.BoldVariant",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(Swift.String) -> PlaySDK.PlayFontDescriptor.DynamicTypography.BoldVariant",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "BoldVariant",
+                                "printedName": "PlaySDK.PlayFontDescriptor.DynamicTypography.BoldVariant",
+                                "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ]
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "PlaySDK.PlayFontDescriptor.DynamicTypography.BoldVariant.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "BoldVariant",
+                                "printedName": "PlaySDK.PlayFontDescriptor.DynamicTypography.BoldVariant",
+                                "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO4autoyAGSScAGmF",
+                    "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO4autoyAGSScAGmF",
+                    "moduleName": "PlaySDK"
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "variant",
+                    "printedName": "variant",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(PlaySDK.PlayFontDescriptor.DynamicTypography.BoldVariant.Type) -> (Swift.String) -> PlaySDK.PlayFontDescriptor.DynamicTypography.BoldVariant",
+                        "children": [
+                          {
+                            "kind": "TypeFunc",
+                            "name": "Function",
+                            "printedName": "(Swift.String) -> PlaySDK.PlayFontDescriptor.DynamicTypography.BoldVariant",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "BoldVariant",
+                                "printedName": "PlaySDK.PlayFontDescriptor.DynamicTypography.BoldVariant",
+                                "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ]
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "PlaySDK.PlayFontDescriptor.DynamicTypography.BoldVariant.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "BoldVariant",
+                                "printedName": "PlaySDK.PlayFontDescriptor.DynamicTypography.BoldVariant",
+                                "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO7variantyAGSScAGmF",
+                    "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO7variantyAGSScAGmF",
+                    "moduleName": "PlaySDK"
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "postscriptName",
+                    "printedName": "postscriptName",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO14postscriptNameSSSgvp",
+                    "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO14postscriptNameSSSgvp",
+                    "moduleName": "PlaySDK",
+                    "declAttributes": [
+                      "AccessControl"
+                    ],
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO14postscriptNameSSSgvg",
+                        "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO14postscriptNameSSSgvg",
+                        "moduleName": "PlaySDK",
+                        "accessorKind": "get"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "isAuto",
+                    "printedName": "isAuto",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO6isAutoSbvp",
+                    "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO6isAutoSbvp",
+                    "moduleName": "PlaySDK",
+                    "declAttributes": [
+                      "AccessControl"
+                    ],
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO6isAutoSbvg",
+                        "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO6isAutoSbvg",
+                        "moduleName": "PlaySDK",
+                        "accessorKind": "get"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "hashValue",
+                    "printedName": "hashValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO9hashValueSivp",
+                    "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO9hashValueSivp",
+                    "moduleName": "PlaySDK",
+                    "implicit": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO9hashValueSivg",
+                        "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO9hashValueSivg",
+                        "moduleName": "PlaySDK",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Function",
+                    "name": "hash",
+                    "printedName": "hash(into:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Hasher",
+                        "printedName": "Swift.Hasher",
+                        "paramValueOwnership": "InOut",
+                        "usr": "s:s6HasherV"
+                      }
+                    ],
+                    "declKind": "Func",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO4hash4intoys6HasherVz_tF",
+                    "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO4hash4intoys6HasherVz_tF",
+                    "moduleName": "PlaySDK",
+                    "implicit": true,
+                    "funcSelfKind": "NonMutating"
+                  },
+                  {
+                    "kind": "Function",
+                    "name": "==",
+                    "printedName": "==(_:_:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BoldVariant",
+                        "printedName": "PlaySDK.PlayFontDescriptor.DynamicTypography.BoldVariant",
+                        "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BoldVariant",
+                        "printedName": "PlaySDK.PlayFontDescriptor.DynamicTypography.BoldVariant",
+                        "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO"
+                      }
+                    ],
+                    "declKind": "Func",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO2eeoiySbAG_AGtFZ",
+                    "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO2eeoiySbAG_AGtFZ",
+                    "moduleName": "PlaySDK",
+                    "static": true,
+                    "implicit": true,
+                    "funcSelfKind": "NonMutating"
+                  }
+                ],
+                "declKind": "Enum",
+                "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO",
+                "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO",
+                "moduleName": "PlaySDK",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Hashable",
+                    "printedName": "Hashable",
+                    "usr": "s:SH",
+                    "mangledName": "$sSH"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Equatable",
+                    "printedName": "Equatable",
+                    "usr": "s:SQ",
+                    "mangledName": "$sSQ"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "style",
+                "printedName": "style",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Style",
+                    "printedName": "PlaySDK.PlayFontDescriptor.DynamicTypography.Style",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV5StyleO"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV5styleAE5StyleOvp",
+                "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV5styleAE5StyleOvp",
+                "moduleName": "PlaySDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Style",
+                        "printedName": "PlaySDK.PlayFontDescriptor.DynamicTypography.Style",
+                        "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV5StyleO"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV5styleAE5StyleOvg",
+                    "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV5styleAE5StyleOvg",
+                    "moduleName": "PlaySDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Style",
+                        "printedName": "PlaySDK.PlayFontDescriptor.DynamicTypography.Style",
+                        "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV5StyleO"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV5styleAE5StyleOvs",
+                    "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV5styleAE5StyleOvs",
+                    "moduleName": "PlaySDK",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV5styleAE5StyleOvM",
+                    "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV5styleAE5StyleOvM",
+                    "moduleName": "PlaySDK",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "boldVariant",
+                "printedName": "boldVariant",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BoldVariant",
+                    "printedName": "PlaySDK.PlayFontDescriptor.DynamicTypography.BoldVariant",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV11boldVariantAE04BoldH0Ovp",
+                "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV11boldVariantAE04BoldH0Ovp",
+                "moduleName": "PlaySDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BoldVariant",
+                        "printedName": "PlaySDK.PlayFontDescriptor.DynamicTypography.BoldVariant",
+                        "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV11boldVariantAE04BoldH0Ovg",
+                    "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV11boldVariantAE04BoldH0Ovg",
+                    "moduleName": "PlaySDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BoldVariant",
+                        "printedName": "PlaySDK.PlayFontDescriptor.DynamicTypography.BoldVariant",
+                        "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV11boldVariantAE04BoldH0Ovs",
+                    "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV11boldVariantAE04BoldH0Ovs",
+                    "moduleName": "PlaySDK",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV11boldVariantAE04BoldH0OvM",
+                    "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV11boldVariantAE04BoldH0OvM",
+                    "moduleName": "PlaySDK",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "isEnabled",
+                "printedName": "isEnabled",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV9isEnabledSbvp",
+                "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV9isEnabledSbvp",
+                "moduleName": "PlaySDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV9isEnabledSbvg",
+                    "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV9isEnabledSbvg",
+                    "moduleName": "PlaySDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV9isEnabledSbvs",
+                    "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV9isEnabledSbvs",
+                    "moduleName": "PlaySDK",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV9isEnabledSbvM",
+                    "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV9isEnabledSbvM",
+                    "moduleName": "PlaySDK",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV",
+            "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV",
+            "moduleName": "PlaySDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7PlaySDK0A14FontDescriptorV",
+        "mangledName": "$s7PlaySDK0A14FontDescriptorV",
+        "moduleName": "PlaySDK",
+        "declAttributes": [
+          "AccessControl"
         ]
       },
       {
@@ -3332,8 +5381,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "TypographyInfo",
-        "printedName": "TypographyInfo",
+        "name": "PlayTypography",
+        "printedName": "PlayTypography",
         "children": [
           {
             "kind": "Var",
@@ -3348,8 +5397,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:7PlaySDK14TypographyInfoV4nameSSvp",
-            "mangledName": "$s7PlaySDK14TypographyInfoV4nameSSvp",
+            "usr": "s:7PlaySDK0A10TypographyV4nameSSvp",
+            "mangledName": "$s7PlaySDK0A10TypographyV4nameSSvp",
             "moduleName": "PlaySDK",
             "declAttributes": [
               "AccessControl"
@@ -3368,8 +5417,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7PlaySDK14TypographyInfoV4nameSSvg",
-                "mangledName": "$s7PlaySDK14TypographyInfoV4nameSSvg",
+                "usr": "s:7PlaySDK0A10TypographyV4nameSSvg",
+                "mangledName": "$s7PlaySDK0A10TypographyV4nameSSvg",
                 "moduleName": "PlaySDK",
                 "accessorKind": "get"
               }
@@ -3388,8 +5437,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:7PlaySDK14TypographyInfoV8fontSize14CoreFoundation7CGFloatVvp",
-            "mangledName": "$s7PlaySDK14TypographyInfoV8fontSize12CoreGraphics7CGFloatVvp",
+            "usr": "s:7PlaySDK0A10TypographyV8fontSize14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s7PlaySDK0A10TypographyV8fontSize12CoreGraphics7CGFloatVvp",
             "moduleName": "PlaySDK",
             "declAttributes": [
               "AccessControl"
@@ -3408,8 +5457,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7PlaySDK14TypographyInfoV8fontSize14CoreFoundation7CGFloatVvg",
-                "mangledName": "$s7PlaySDK14TypographyInfoV8fontSize12CoreGraphics7CGFloatVvg",
+                "usr": "s:7PlaySDK0A10TypographyV8fontSize14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s7PlaySDK0A10TypographyV8fontSize12CoreGraphics7CGFloatVvg",
                 "moduleName": "PlaySDK",
                 "accessorKind": "get"
               }
@@ -3428,8 +5477,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:7PlaySDK14TypographyInfoV10lineHeightAA0A5FloatOvp",
-            "mangledName": "$s7PlaySDK14TypographyInfoV10lineHeightAA0A5FloatOvp",
+            "usr": "s:7PlaySDK0A10TypographyV10lineHeightAA0A5FloatOvp",
+            "mangledName": "$s7PlaySDK0A10TypographyV10lineHeightAA0A5FloatOvp",
             "moduleName": "PlaySDK",
             "declAttributes": [
               "AccessControl"
@@ -3448,8 +5497,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7PlaySDK14TypographyInfoV10lineHeightAA0A5FloatOvg",
-                "mangledName": "$s7PlaySDK14TypographyInfoV10lineHeightAA0A5FloatOvg",
+                "usr": "s:7PlaySDK0A10TypographyV10lineHeightAA0A5FloatOvg",
+                "mangledName": "$s7PlaySDK0A10TypographyV10lineHeightAA0A5FloatOvg",
                 "moduleName": "PlaySDK",
                 "accessorKind": "get"
               }
@@ -3468,8 +5517,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:7PlaySDK14TypographyInfoV7kerningAA0A5FloatOvp",
-            "mangledName": "$s7PlaySDK14TypographyInfoV7kerningAA0A5FloatOvp",
+            "usr": "s:7PlaySDK0A10TypographyV7kerningAA0A5FloatOvp",
+            "mangledName": "$s7PlaySDK0A10TypographyV7kerningAA0A5FloatOvp",
             "moduleName": "PlaySDK",
             "declAttributes": [
               "AccessControl"
@@ -3488,8 +5537,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7PlaySDK14TypographyInfoV7kerningAA0A5FloatOvg",
-                "mangledName": "$s7PlaySDK14TypographyInfoV7kerningAA0A5FloatOvg",
+                "usr": "s:7PlaySDK0A10TypographyV7kerningAA0A5FloatOvg",
+                "mangledName": "$s7PlaySDK0A10TypographyV7kerningAA0A5FloatOvg",
                 "moduleName": "PlaySDK",
                 "accessorKind": "get"
               }
@@ -3508,8 +5557,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:7PlaySDK14TypographyInfoV13textTransformAA0a4TextF4TypeOvp",
-            "mangledName": "$s7PlaySDK14TypographyInfoV13textTransformAA0a4TextF4TypeOvp",
+            "usr": "s:7PlaySDK0A10TypographyV13textTransformAA0a4TextE4TypeOvp",
+            "mangledName": "$s7PlaySDK0A10TypographyV13textTransformAA0a4TextE4TypeOvp",
             "moduleName": "PlaySDK",
             "declAttributes": [
               "AccessControl"
@@ -3528,12 +5577,63 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7PlaySDK14TypographyInfoV13textTransformAA0a4TextF4TypeOvg",
-                "mangledName": "$s7PlaySDK14TypographyInfoV13textTransformAA0a4TextF4TypeOvg",
+                "usr": "s:7PlaySDK0A10TypographyV13textTransformAA0a4TextE4TypeOvg",
+                "mangledName": "$s7PlaySDK0A10TypographyV13textTransformAA0a4TextE4TypeOvg",
                 "moduleName": "PlaySDK",
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(bundle:fontDescriptor:lineHeight:kerning:textTransform:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PlayTypography",
+                "printedName": "PlaySDK.PlayTypography",
+                "usr": "s:7PlaySDK0A10TypographyV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bundle",
+                "printedName": "Foundation.Bundle",
+                "usr": "c:objc(cs)NSBundle"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PlayFontDescriptor",
+                "printedName": "PlaySDK.PlayFontDescriptor",
+                "usr": "s:7PlaySDK0A14FontDescriptorV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PlayFloat",
+                "printedName": "PlaySDK.PlayFloat",
+                "usr": "s:7PlaySDK0A5FloatO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PlayFloat",
+                "printedName": "PlaySDK.PlayFloat",
+                "usr": "s:7PlaySDK0A5FloatO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PlayTextTransformType",
+                "printedName": "PlaySDK.PlayTextTransformType",
+                "usr": "s:7PlaySDK0A17TextTransformTypeO"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7PlaySDK0A10TypographyV6bundle14fontDescriptor10lineHeight7kerning13textTransformACSo8NSBundleC_AA0a4FontF0VAA0A5FloatOAnA0a4TextK4TypeOtcfc",
+            "mangledName": "$s7PlaySDK0A10TypographyV6bundle14fontDescriptor10lineHeight7kerning13textTransformACSo8NSBundleC_AA0a4FontF0VAA0A5FloatOAnA0a4TextK4TypeOtcfc",
+            "moduleName": "PlaySDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
           },
           {
             "kind": "Function",
@@ -3554,8 +5654,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7PlaySDK14TypographyInfoV16attributedStringy10Foundation010AttributedF0VSSF",
-            "mangledName": "$s7PlaySDK14TypographyInfoV16attributedStringy10Foundation010AttributedF0VSSF",
+            "usr": "s:7PlaySDK0A10TypographyV16attributedStringy10Foundation010AttributedE0VSSF",
+            "mangledName": "$s7PlaySDK0A10TypographyV16attributedStringy10Foundation010AttributedE0VSSF",
             "moduleName": "PlaySDK",
             "declAttributes": [
               "AccessControl"
@@ -3581,8 +5681,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7PlaySDK14TypographyInfoV18nsAttributedStringySo012NSAttributedG0CSSF",
-            "mangledName": "$s7PlaySDK14TypographyInfoV18nsAttributedStringySo012NSAttributedG0CSSF",
+            "usr": "s:7PlaySDK0A10TypographyV18nsAttributedStringySo012NSAttributedF0CSSF",
+            "mangledName": "$s7PlaySDK0A10TypographyV18nsAttributedStringySo012NSAttributedF0CSSF",
             "moduleName": "PlaySDK",
             "declAttributes": [
               "AccessControl"
@@ -3591,8 +5691,8 @@
           }
         ],
         "declKind": "Struct",
-        "usr": "s:7PlaySDK14TypographyInfoV",
-        "mangledName": "$s7PlaySDK14TypographyInfoV",
+        "usr": "s:7PlaySDK0A10TypographyV",
+        "mangledName": "$s7PlaySDK0A10TypographyV",
         "moduleName": "PlaySDK",
         "declAttributes": [
           "AccessControl"
@@ -5506,40 +7606,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "PlaySDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "PlaySDK"
-      },
-      {
-        "kind": "Import",
-        "name": "PlaySheets",
-        "printedName": "PlaySheets",
-        "declKind": "Import",
-        "moduleName": "PlaySDK",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PlaySDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "Name",
         "printedName": "Name",
@@ -5722,6 +7788,27 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/tomomalley\/dev\/Play\/play-catalyst-app\/PlaySDK\/PlaySDK\/Shims\/StyleGradient+Public.swift",
+      "kind": "FloatLiteral",
+      "offset": 1065,
+      "length": 5,
+      "value": "100.0"
+    },
+    {
+      "filePath": "\/Users\/tomomalley\/dev\/Play\/play-catalyst-app\/PlaySDK\/PlaySDK\/Shims\/StyleGradient+Public.swift",
+      "kind": "FloatLiteral",
+      "offset": 1108,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/tomomalley\/dev\/Play\/play-catalyst-app\/PlaySDK\/PlaySDK\/Shims\/StyleGradient+Public.swift",
+      "kind": "Array",
+      "offset": 3861,
+      "length": 2,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/tomomalley\/dev\/Play\/play-catalyst-app\/PlaySDK\/PlaySDK\/GlobalObject.swift",
       "kind": "Dictionary",
       "offset": 386,
@@ -5769,13 +7856,6 @@
       "offset": 4663,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/tomomalley\/dev\/Play\/play-catalyst-app\/PlaySDK\/PlaySDK\/ResizingGradientLayer.swift",
-      "kind": "Array",
-      "offset": 249,
-      "length": 2,
-      "value": "[]"
     }
   ]
 }

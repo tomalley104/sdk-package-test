@@ -14,11 +14,11 @@
 		</data>
 		<key>Modules/PlaySDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		nMrx02EuT7+pklC4Hjgd7zwGpv0=
+		AJGpSDQJl9V99ZaDmSgJ1KP6fdQ=
 		</data>
 		<key>Modules/PlaySDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		rXocOJsRdxoqnsTc9dgg8kBg/+g=
+		vuT+UsJ8CIAh9vwwavFAUaWkljw=
 		</data>
 		<key>Modules/PlaySDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/PlaySDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		rXocOJsRdxoqnsTc9dgg8kBg/+g=
+		vuT+UsJ8CIAh9vwwavFAUaWkljw=
 		</data>
 		<key>Modules/PlaySDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		hnpSGEkA2aaSQFLkIqpd0KSAWfk=
+		igOG+XTcfusaXGDLcngAFDLJ7H8=
 		</data>
 		<key>Modules/PlaySDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		nMrx02EuT7+pklC4Hjgd7zwGpv0=
+		AJGpSDQJl9V99ZaDmSgJ1KP6fdQ=
 		</data>
 		<key>Modules/PlaySDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		XXNqdw5sxjDLwFp99jd6Mfv/U+0=
+		bg3fl8K3SEe/fpIXubzMwQiBHjA=
 		</data>
 		<key>Modules/PlaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/PlaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		XXNqdw5sxjDLwFp99jd6Mfv/U+0=
+		bg3fl8K3SEe/fpIXubzMwQiBHjA=
 		</data>
 		<key>Modules/PlaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		NfGmfc3VxFFsI3up+VIICSPeubg=
+		8ZFHe8Y9GO8xms2j5Iljik4TlL4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,14 +70,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9tRpqtmzOmBE3KCkJwZnZikqVWnh/rWZfZftV3xdNq8=
+			byG5vECqoM2dADFlySvUi8hXBFjSQAsGLyZbO0pUm5E=
 			</data>
 		</dict>
 		<key>Modules/PlaySDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GmgGccbuhv7S3AMUQ8zCGTN62+R3CevNR7St9yFw7aY=
+			Hp1J4d+pF0ol96HUtxSq/Ci5zk60dIpYP4yNAUjYxqY=
 			</data>
 		</dict>
 		<key>Modules/PlaySDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -91,28 +91,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GmgGccbuhv7S3AMUQ8zCGTN62+R3CevNR7St9yFw7aY=
+			Hp1J4d+pF0ol96HUtxSq/Ci5zk60dIpYP4yNAUjYxqY=
 			</data>
 		</dict>
 		<key>Modules/PlaySDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NG0MnWGS6fWKXwcHvybLbj82KdEZKR5Twt5fciQ7XZE=
+			Q+0e/Q+qLySPZ5q6iXBcsiFrr+UKDrFi0jDzP6SMHV0=
 			</data>
 		</dict>
 		<key>Modules/PlaySDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9tRpqtmzOmBE3KCkJwZnZikqVWnh/rWZfZftV3xdNq8=
+			byG5vECqoM2dADFlySvUi8hXBFjSQAsGLyZbO0pUm5E=
 			</data>
 		</dict>
 		<key>Modules/PlaySDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0IAzIwIm8p7vMimJsoSDDgc2Q7WtrgHgMjDEmpPhork=
+			DBkWPTpht0yxDn4zpraaLUifaAr9g91s+XM5eeYcE00=
 			</data>
 		</dict>
 		<key>Modules/PlaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -126,14 +126,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0IAzIwIm8p7vMimJsoSDDgc2Q7WtrgHgMjDEmpPhork=
+			DBkWPTpht0yxDn4zpraaLUifaAr9g91s+XM5eeYcE00=
 			</data>
 		</dict>
 		<key>Modules/PlaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HQ0MvLRmtuStXXKDvbUE2Gth4TXeSwXC0Kc/7lRcxBI=
+			2P4hutgqbN3AbQAjrL8wy0zn+L3mjQRwmFJSXYwn98s=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

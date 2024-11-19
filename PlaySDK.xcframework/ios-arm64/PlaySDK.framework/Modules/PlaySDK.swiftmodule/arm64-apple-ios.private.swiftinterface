@@ -73,6 +73,90 @@ extension PlaySDK.PlayAPIVariableWrapper {
 extension PlaySDK.PlayRuntimeEngine {
   public static func registerAllFonts(bundle: Foundation.Bundle)
 }
+public struct PlayGradient {
+  public var colors: [UIKit.UIColor] {
+    get
+  }
+  public var locations: [Foundation.NSNumber] {
+    get
+  }
+  public var lastValidHueList: [CoreFoundation.CGFloat?] {
+    get
+  }
+  public var endPoint: CoreFoundation.CGPoint {
+    get
+  }
+  public var startPoint: CoreFoundation.CGPoint {
+    get
+  }
+  public var type: QuartzCore.CAGradientLayerType {
+    get
+  }
+  public var scale: CoreFoundation.CGFloat {
+    get
+  }
+  public var rotation: CoreFoundation.CGFloat {
+    get
+  }
+  public init(type: QuartzCore.CAGradientLayerType = .axial, colors: [UIKit.UIColor], locations: [Foundation.NSNumber], lastValidHueList: [CoreFoundation.CGFloat?]? = nil, startPoint: CoreFoundation.CGPoint, endPoint: CoreFoundation.CGPoint, scale: CoreFoundation.CGFloat = 100.0, rotation: CoreFoundation.CGFloat = 0.0)
+  public func applyTo(_ view: UIKit.UIView)
+}
+public struct PlayFontDescriptor {
+  public init(fontType: PlaySDK.PlayFontDescriptor.FontType, size: CoreFoundation.CGFloat? = nil)
+  public enum FontStyle : Swift.String, Swift.RawRepresentable, Swift.CaseIterable {
+    case regular
+    case italic
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [PlaySDK.PlayFontDescriptor.FontStyle]
+    public typealias RawValue = Swift.String
+    public static var allCases: [PlaySDK.PlayFontDescriptor.FontStyle] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum FontType {
+    case raw(_: Swift.String, _: PlaySDK.PlayFontDescriptor.DynamicTypography)
+    case system(_: PlaySDK.PlayFontDescriptor.FontStyle = .regular, _: UIKit.UIFont.Weight = .regular, _: UIKit.UIFont.Width = .standard, _: UIKit.UIFontDescriptor.SystemDesign = .default)
+    case systemStyle(_: UIKit.UIFont.TextStyle = .body, _: PlaySDK.PlayFontDescriptor.FontStyle = .regular, _: UIKit.UIFont.Weight? = nil, _: UIKit.UIFont.Width = .standard, _: UIKit.UIFontDescriptor.SystemDesign = .default)
+  }
+  public struct DynamicTypography {
+    public static var none: PlaySDK.PlayFontDescriptor.DynamicTypography {
+      get
+    }
+    public enum Style : Swift.Hashable {
+      case auto
+      case style(_: UIKit.UIFont.TextStyle)
+      public var title: Swift.String {
+        get
+      }
+      public func hash(into hasher: inout Swift.Hasher)
+      public static func == (a: PlaySDK.PlayFontDescriptor.DynamicTypography.Style, b: PlaySDK.PlayFontDescriptor.DynamicTypography.Style) -> Swift.Bool
+      public var hashValue: Swift.Int {
+        get
+      }
+    }
+    public enum BoldVariant : Swift.Hashable {
+      case auto(_: Swift.String)
+      case variant(_: Swift.String)
+      public var postscriptName: Swift.String? {
+        get
+      }
+      public var isAuto: Swift.Bool {
+        get
+      }
+      public func hash(into hasher: inout Swift.Hasher)
+      public static func == (a: PlaySDK.PlayFontDescriptor.DynamicTypography.BoldVariant, b: PlaySDK.PlayFontDescriptor.DynamicTypography.BoldVariant) -> Swift.Bool
+      public var hashValue: Swift.Int {
+        get
+      }
+    }
+    public var style: PlaySDK.PlayFontDescriptor.DynamicTypography.Style
+    public var boldVariant: PlaySDK.PlayFontDescriptor.DynamicTypography.BoldVariant
+    public var isEnabled: Swift.Bool
+  }
+}
 public class GlobalObject<VariableContainerType> : PlaySDK.PlayAPIVariableWrapper {
   public typealias VariableContainerType = VariableContainerType
   public typealias ClassType = PlaySDK.GlobalObject<VariableContainerType>
@@ -94,7 +178,7 @@ public enum PlayTextTransformType : Swift.String, Swift.Hashable {
     get
   }
 }
-public struct TypographyInfo {
+public struct PlayTypography {
   public var name: Swift.String {
     get
   }
@@ -110,6 +194,7 @@ public struct TypographyInfo {
   public var textTransform: PlaySDK.PlayTextTransformType {
     get
   }
+  public init(bundle: Foundation.Bundle, fontDescriptor: PlaySDK.PlayFontDescriptor, lineHeight: PlaySDK.PlayFloat, kerning: PlaySDK.PlayFloat, textTransform: PlaySDK.PlayTextTransformType)
   public func attributedString(_ text: Swift.String) -> Foundation.AttributedString
   public func nsAttributedString(_ text: Swift.String) -> Foundation.NSAttributedString
 }
@@ -169,6 +254,8 @@ extension PlaySDK.PlayRuntimeEngine {
 }
 extension PlaySDK.PlayVariableEventType : Swift.Equatable {}
 extension PlaySDK.PlayVariableEventType : Swift.Hashable {}
+extension PlaySDK.PlayFontDescriptor.FontStyle : Swift.Equatable {}
+extension PlaySDK.PlayFontDescriptor.FontStyle : Swift.Hashable {}
 extension PlaySDK.PlayTextTransformType : Swift.RawRepresentable {}
 extension PlaySDK.PlayRuntimeEngine.BuildErrors : Swift.Equatable {}
 extension PlaySDK.PlayRuntimeEngine.BuildErrors : Swift.Hashable {}
