@@ -41,11 +41,10 @@
 	<key>DTXcodeBuild</key>
 	<string>15E204a</string>
 	<key>LSMinimumSystemVersion</key>
-	<string>14.0</string>
+	<string>13.0</string>
 	<key>UIDeviceFamily</key>
 	<array>
 		<integer>2</integer>
-		<integer>6</integer>
 	</array>
 </dict>
 </plist>
