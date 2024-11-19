@@ -1,0 +1,174 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios17.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PlaySDK
+import Combine
+import Foundation
+@_exported import PlaySDK
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class UIKitBaseViewController<VariableContainerType, ClassType> : UIKit.UIViewController, PlaySDK.PlayAPIVariableWrapper {
+  @_Concurrency.MainActor(unsafe) open var variables: VariableContainerType? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var keyPathToPlayId: [Swift.AnyHashable : Swift.String]
+  @_Concurrency.MainActor(unsafe) open var playIdToUpdateCall: [Swift.String : (Any?) -> Swift.Void]
+  @_Concurrency.MainActor(unsafe) public func initialize(engine: PlaySDK.PlayRuntimeEngine, playId: Swift.String)
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) public func setVariable(id: Swift.String, value: Any?)
+  @_Concurrency.MainActor(unsafe) public func getVariable(id: Swift.String) -> Any?
+  @_Concurrency.MainActor(unsafe) public func setVariable<T>(keyPath: Swift.KeyPath<VariableContainerType, T>, value: Any?)
+  @_Concurrency.MainActor(unsafe) public func getVariablee<T>(keyPath: Swift.KeyPath<VariableContainerType, T>) -> Any?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+public protocol SwiftUIBaseViewController : PlaySDK.PlayAPIVariableWrapper, SwiftUI.UIViewControllerRepresentable {
+}
+extension PlaySDK.SwiftUIBaseViewController {
+  public static func updateUIViewController(_ uiViewController: Self.UIViewControllerType, suiController: some SwiftUIBaseViewController, addtionalUpdate: (() -> Swift.Void)? = nil)
+}
+public struct PlayVariableEvent {
+  public var id: Swift.String {
+    get
+  }
+  public var type: PlaySDK.PlayVariableEventType {
+    get
+  }
+  public var value: Any? {
+    get
+  }
+}
+public enum PlayVariableEventType {
+  case create
+  case update
+  case delete
+  public static func == (a: PlaySDK.PlayVariableEventType, b: PlaySDK.PlayVariableEventType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class UIKitBaseViewControllerWithChildren<VariableContainerType, ClassType, Content> : PlaySDK.UIKitBaseViewController<VariableContainerType, ClassType> where Content : SwiftUI.View {
+  @_Concurrency.MainActor(unsafe) public func withChildren(_ content: Content) -> Self
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol PlayAPIVariableWrapper {
+  associatedtype VariableContainerType
+  associatedtype ClassType : PlaySDK.PlayAPIVariableWrapper
+  var variables: Self.VariableContainerType? { get }
+  var keyPathToPlayId: [Swift.AnyHashable : Swift.String] { get }
+  var playIdToUpdateCall: [Swift.String : (Any?) -> Swift.Void] { get set }
+  @discardableResult
+  func onVariableChange<VarType>(variable: Swift.KeyPath<Self.VariableContainerType, VarType>, _ callback: @escaping ((VarType) -> Swift.Void)) -> Self.ClassType
+}
+extension PlaySDK.PlayAPIVariableWrapper {
+  @discardableResult
+  public func onVariableChange<ValueType>(variable: Swift.KeyPath<Self.VariableContainerType, ValueType>, _ callback: @escaping ((_ val: ValueType) -> Swift.Void)) -> Self
+}
+extension PlaySDK.PlayRuntimeEngine {
+  public static func registerAllFonts(bundle: Foundation.Bundle)
+}
+public class GlobalObject<VariableContainerType> : PlaySDK.PlayAPIVariableWrapper {
+  public typealias VariableContainerType = VariableContainerType
+  public typealias ClassType = PlaySDK.GlobalObject<VariableContainerType>
+  public var variables: VariableContainerType?
+  public var keyPathToPlayId: [Swift.AnyHashable : Swift.String]
+  public var playIdToUpdateCall: [Swift.String : (Any?) -> Swift.Void]
+  public init(_ engine: PlaySDK.PlayRuntimeEngine?)
+  @discardableResult
+  public func setKeyPathToPlayId(_ newMap: [Swift.AnyHashable : Swift.String]) -> Self
+  public func setVariable(id: Swift.String, val: Any?)
+  @objc deinit
+}
+public enum PlayTextTransformType : Swift.String, Swift.Hashable {
+  case uppercase, lowercase, capitalize, none
+  public func getTransformedString(_ string: Swift.String) -> Swift.String
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct TypographyInfo {
+  public var name: Swift.String {
+    get
+  }
+  public var fontSize: CoreFoundation.CGFloat {
+    get
+  }
+  public var lineHeight: PlaySDK.PlayFloat {
+    get
+  }
+  public var kerning: PlaySDK.PlayFloat {
+    get
+  }
+  public var textTransform: PlaySDK.PlayTextTransformType {
+    get
+  }
+  public func attributedString(_ text: Swift.String) -> Foundation.AttributedString
+  public func nsAttributedString(_ text: Swift.String) -> Foundation.NSAttributedString
+}
+extension Foundation.NSNotification.Name {
+  public static var playVariableEventNotification: Foundation.NSNotification.Name {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class PlayRuntimeEngine {
+  @objc deinit
+  public func setGlobalVariable(id: Swift.String, value: Any?)
+  @discardableResult
+  public func onGlobalVariableChange(_ callback: ((PlaySDK.PlayVariableEvent) -> Swift.Void)?) -> Self
+}
+@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class UIKitBaseView<VariableContainerType, ClassType> : UIKit.UIView, PlaySDK.PlayAPIVariableWrapper {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public var translatesAutoresizingMaskIntoConstraints: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) open var variables: VariableContainerType? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) open var keyPathToPlayId: [Swift.AnyHashable : Swift.String]
+  @_Concurrency.MainActor(unsafe) open var playIdToUpdateCall: [Swift.String : (Any?) -> Swift.Void]
+  @_Concurrency.MainActor(unsafe) public var onResize: ((CoreFoundation.CGSize) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) public func initialize(engine: PlaySDK.PlayRuntimeEngine, playId: Swift.String)
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) public func setVariable(id: Swift.String, value: Any?)
+  @_Concurrency.MainActor(unsafe) public func getVariable(id: Swift.String) -> Any?
+  @_Concurrency.MainActor(unsafe) public func setVariable<T>(keyPath: Swift.KeyPath<VariableContainerType, T>, value: Any?)
+  @_Concurrency.MainActor(unsafe) public func getVariablee<T>(keyPath: Swift.KeyPath<VariableContainerType, T>) -> Any?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+}
+public protocol SwiftUIBaseView : PlaySDK.PlayAPIVariableWrapper, SwiftUI.UIViewRepresentable {
+}
+extension PlaySDK.SwiftUIBaseView {
+  public static func updateUIView(_ uiView: Self.UIViewType, suiView: some SwiftUIBaseView, addtionalUpdate: (() -> Swift.Void)? = nil)
+}
+public enum PlayFloat {
+  case auto
+  case value(CoreFoundation.CGFloat)
+  case percent(Swift.Int)
+}
+extension PlaySDK.PlayRuntimeEngine {
+  public enum BuildErrors : Swift.Error {
+    case notFound
+    case invalidType
+    case couldNotCreateView
+    case missingProject
+    public static func == (a: PlaySDK.PlayRuntimeEngine.BuildErrors, b: PlaySDK.PlayRuntimeEngine.BuildErrors) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+extension PlaySDK.PlayVariableEventType : Swift.Equatable {}
+extension PlaySDK.PlayVariableEventType : Swift.Hashable {}
+extension PlaySDK.PlayTextTransformType : Swift.RawRepresentable {}
+extension PlaySDK.PlayRuntimeEngine.BuildErrors : Swift.Equatable {}
+extension PlaySDK.PlayRuntimeEngine.BuildErrors : Swift.Hashable {}

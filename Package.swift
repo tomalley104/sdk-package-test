@@ -17,8 +17,8 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "SDKTestPackage",
-            dependencies: ["PlaySDK"]
+            dependencies: ["PlaySDKFramework"]
         ),
-        .binaryTarget(name: "PlaySDK", path: "./PlaySDK.xcframework"),
+        .binaryTarget(name: "PlaySDKFramework", path: "./PlaySDK.xcframework"),
     ]
 )
