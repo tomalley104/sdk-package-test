@@ -4366,6 +4366,45 @@
                     "accessorKind": "_modify"
                   }
                 ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(style:boldVariant:isEnabled:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DynamicTypography",
+                    "printedName": "PlaySDK.PlayFontDescriptor.DynamicTypography",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Style",
+                    "printedName": "PlaySDK.PlayFontDescriptor.DynamicTypography.Style",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV5StyleO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BoldVariant",
+                    "printedName": "PlaySDK.PlayFontDescriptor.DynamicTypography.BoldVariant",
+                    "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV11BoldVariantO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:7PlaySDK0A14FontDescriptorV17DynamicTypographyV5style11boldVariant9isEnabledA2E5StyleO_AE04BoldI0OSbtcfc",
+                "mangledName": "$s7PlaySDK0A14FontDescriptorV17DynamicTypographyV5style11boldVariant9isEnabledA2E5StyleO_AE04BoldI0OSbtcfc",
+                "moduleName": "PlaySDK",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
               }
             ],
             "declKind": "Struct",
@@ -5856,6 +5895,156 @@
             "declKind": "Func",
             "usr": "s:7PlaySDK0A13RuntimeEngineC16registerAllFonts6bundleySo8NSBundleC_tFZ",
             "mangledName": "$s7PlaySDK0A13RuntimeEngineC16registerAllFonts6bundleySo8NSBundleC_tFZ",
+            "moduleName": "PlaySDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadingProjectJSON",
+            "printedName": "loadingProjectJSON(bundle:resource:ext:colors:gradients:typography:spacing:radius:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PlaySDK.PlayRuntimeEngine?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PlayRuntimeEngine",
+                    "printedName": "PlaySDK.PlayRuntimeEngine",
+                    "usr": "s:7PlaySDK0A13RuntimeEngineC"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bundle",
+                "printedName": "Foundation.Bundle",
+                "usr": "c:objc(cs)NSBundle"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : UIKit.UIColor]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : PlaySDK.PlayGradient]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PlayGradient",
+                    "printedName": "PlaySDK.PlayGradient",
+                    "usr": "s:7PlaySDK0A8GradientV"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : PlaySDK.PlayTypography]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PlayTypography",
+                    "printedName": "PlaySDK.PlayTypography",
+                    "usr": "s:7PlaySDK0A10TypographyV"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : CoreGraphics.CGFloat]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : CoreGraphics.CGFloat]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7PlaySDK0A13RuntimeEngineC18loadingProjectJSON6bundle8resource3ext6colors9gradients10typography7spacing6radiusACSgSo8NSBundleC_S2SSDySSSo7UIColorCGSDySSAA0A8GradientVGSDySSAA0A10TypographyVGSDySS14CoreFoundation7CGFloatVGA0_tFZ",
+            "mangledName": "$s7PlaySDK0A13RuntimeEngineC18loadingProjectJSON6bundle8resource3ext6colors9gradients10typography7spacing6radiusACSgSo8NSBundleC_S2SSDySSSo7UIColorCGSDySSAA0A8GradientVGSDySSAA0A10TypographyVGSDySS12CoreGraphics7CGFloatVGA0_tFZ",
             "moduleName": "PlaySDK",
             "static": true,
             "declAttributes": [

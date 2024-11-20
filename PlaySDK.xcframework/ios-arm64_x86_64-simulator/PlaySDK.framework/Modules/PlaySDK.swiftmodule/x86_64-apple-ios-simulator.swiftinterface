@@ -101,6 +101,9 @@ public struct PlayGradient {
   public init(type: QuartzCore.CAGradientLayerType = .axial, colors: [UIKit.UIColor], locations: [Foundation.NSNumber], lastValidHueList: [CoreFoundation.CGFloat?]? = nil, startPoint: CoreFoundation.CGPoint, endPoint: CoreFoundation.CGPoint, scale: CoreFoundation.CGFloat = 100.0, rotation: CoreFoundation.CGFloat = 0.0)
   public func applyTo(_ view: UIKit.UIView)
 }
+extension PlaySDK.PlayRuntimeEngine {
+  public static func loadingProjectJSON(bundle: Foundation.Bundle, resource: Swift.String, ext: Swift.String, colors: [Swift.String : UIKit.UIColor], gradients: [Swift.String : PlaySDK.PlayGradient], typography: [Swift.String : PlaySDK.PlayTypography], spacing: [Swift.String : CoreFoundation.CGFloat], radius: [Swift.String : CoreFoundation.CGFloat]) -> PlaySDK.PlayRuntimeEngine?
+}
 public struct PlayFontDescriptor {
   public init(fontType: PlaySDK.PlayFontDescriptor.FontType, size: CoreFoundation.CGFloat? = nil)
   public enum FontStyle : Swift.String, Swift.RawRepresentable, Swift.CaseIterable {
@@ -155,6 +158,7 @@ public struct PlayFontDescriptor {
     public var style: PlaySDK.PlayFontDescriptor.DynamicTypography.Style
     public var boldVariant: PlaySDK.PlayFontDescriptor.DynamicTypography.BoldVariant
     public var isEnabled: Swift.Bool
+    public init(style: PlaySDK.PlayFontDescriptor.DynamicTypography.Style, boldVariant: PlaySDK.PlayFontDescriptor.DynamicTypography.BoldVariant, isEnabled: Swift.Bool)
   }
 }
 public class GlobalObject<VariableContainerType> : PlaySDK.PlayAPIVariableWrapper {
