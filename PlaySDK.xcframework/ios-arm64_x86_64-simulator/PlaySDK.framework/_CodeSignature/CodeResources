@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/PlaySDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		R/gkM2HSyMRBShYt5aaMKUCirFY=
+		Euts+cZkux0hToy1Iyqg+D1e83w=
 		</data>
 		<key>Modules/PlaySDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/PlaySDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Y5JnPjBnstgd+G258T9hpUF3c+w=
+		WrUovPZVT3WRKvF/oHOz2KU3zg8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -98,7 +98,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lcECKDZGHUkS+viQuJpJKmeltexf9uORAW6EIyMMnbc=
+			VJhszsKEVHeWjCIgV5RSi0ZG73tYac7cx2eIO/ign9s=
 			</data>
 		</dict>
 		<key>Modules/PlaySDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fAzZjUBRKXxhYqla5MscgL6KXBEvyIpbOv2nQUueFIc=
+			lpjvHNzwA2fnyKVJwIDbc5qFZdQPb2e2IgI5eMggPRc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
