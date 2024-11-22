@@ -489,6 +489,41 @@
           },
           {
             "kind": "Function",
+            "name": "viewDidAppear",
+            "printedName": "viewDidAppear(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7PlaySDK23UIKitBaseViewControllerC13viewDidAppearyySbF",
+            "mangledName": "$s7PlaySDK23UIKitBaseViewControllerC13viewDidAppearyySbF",
+            "moduleName": "PlaySDK",
+            "genericSig": "<τ_0_0, τ_0_1>",
+            "sugared_genericSig": "<VariableContainerType, ClassType>",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "viewDidAppear:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setVariable",
             "printedName": "setVariable(id:value:)",
             "children": [
@@ -7732,12 +7767,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(PlaySDK.PlayFloat.Type) -> (Swift.Int) -> PlaySDK.PlayFloat",
+                "printedName": "(PlaySDK.PlayFloat.Type) -> (CoreGraphics.CGFloat) -> PlaySDK.PlayFloat",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Int) -> PlaySDK.PlayFloat",
+                    "printedName": "(CoreGraphics.CGFloat) -> PlaySDK.PlayFloat",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -7747,9 +7782,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
+                        "name": "CGFloat",
+                        "printedName": "CoreGraphics.CGFloat",
+                        "usr": "s:14CoreFoundation7CGFloatV"
                       }
                     ]
                   },
@@ -7770,8 +7805,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:7PlaySDK0A5FloatO7percentyACSicACmF",
-            "mangledName": "$s7PlaySDK0A5FloatO7percentyACSicACmF",
+            "usr": "s:7PlaySDK0A5FloatO7percentyAC14CoreFoundation7CGFloatVcACmF",
+            "mangledName": "$s7PlaySDK0A5FloatO7percentyAC12CoreGraphics7CGFloatVcACmF",
             "moduleName": "PlaySDK"
           }
         ],
@@ -7954,6 +7989,20 @@
       "offset": 508,
       "length": 3,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/tomomalley\/dev\/Play\/play-catalyst-app\/PlaySDK\/PlaySDK\/UIKitBaseViewController.swift",
+      "kind": "Array",
+      "offset": 785,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/tomomalley\/dev\/Play\/play-catalyst-app\/PlaySDK\/PlaySDK\/UIKitBaseViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 823,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/tomomalley\/dev\/Play\/play-catalyst-app\/PlaySDK\/PlaySDK\/Shims\/TypographyModel+Extensions.swift",
