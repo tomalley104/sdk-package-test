@@ -2,7 +2,7 @@
 
 
 struct TestStruct {
-    static func doAThing() {
-        
+    static func doAThing() throws {
+        throw PlayRuntimeEngine.BuildErrors.couldNotCreateView
     }
 }
