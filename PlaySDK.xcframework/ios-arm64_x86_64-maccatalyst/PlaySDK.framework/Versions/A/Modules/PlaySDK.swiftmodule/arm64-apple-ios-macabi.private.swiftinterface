@@ -227,14 +227,21 @@ public class GlobalObject<VariableContainerType> : PlaySDK.PlayAPIVariableWrappe
   }
   @_Concurrency.MainActor(unsafe) open var keyPathToPlayId: [Swift.AnyHashable : Swift.String]
   @_Concurrency.MainActor(unsafe) open var playIdToUpdateCall: [Swift.String : (Any?) -> Swift.Void]
-  @_Concurrency.MainActor(unsafe) public var onResize: ((CoreFoundation.CGSize) -> Swift.Void)?
-  @_Concurrency.MainActor(unsafe) public func initialize(engine: PlaySDK.PlayRuntimeEngine, playId: Swift.String)
+  @_Concurrency.MainActor(unsafe) public var onResize: ((CoreFoundation.CGSize, SwiftUI.Animation?) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) public var layoutSuperviewOnAnimation: Swift.Bool
+  @_Concurrency.MainActor(unsafe) public var nodeView: UIKit.UIView {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) public func initialize(engine: PlaySDK.PlayRuntimeEngine, playId: Swift.String, isSwiftUI: Swift.Bool = false)
+  @discardableResult
+  @_Concurrency.MainActor(unsafe) public func isSwiftUI(_ isSwiftUI: Swift.Bool) -> Self
   @objc deinit
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func hitTest(_ point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> UIKit.UIView?
   @_Concurrency.MainActor(unsafe) public func setVariable(id: Swift.String, value: Any?)
   @_Concurrency.MainActor(unsafe) public func getVariable(id: Swift.String) -> Any?
   @_Concurrency.MainActor(unsafe) public func setVariable<T>(keyPath: Swift.KeyPath<VariableContainerType, T>, value: Any?)
   @_Concurrency.MainActor(unsafe) public func getVariablee<T>(keyPath: Swift.KeyPath<VariableContainerType, T>) -> Any?
+  @_Concurrency.MainActor(unsafe) public static func setState(view: PlaySDK.UIKitBaseView<VariableContainerType, ClassType>, stateId: Swift.String, runLayout: Swift.Bool = false)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }

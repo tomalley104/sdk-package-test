@@ -6184,12 +6184,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((CoreFoundation.CGSize) -> ())?",
+                "printedName": "((CoreFoundation.CGSize, SwiftUI.Animation?) -> ())?",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(CoreFoundation.CGSize) -> ()",
+                    "printedName": "(CoreFoundation.CGSize, SwiftUI.Animation?) -> ()",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -6198,9 +6198,30 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "CGSize",
-                        "printedName": "CoreFoundation.CGSize",
-                        "usr": "c:@S@CGSize"
+                        "name": "Tuple",
+                        "printedName": "(CoreFoundation.CGSize, SwiftUI.Animation?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGSize",
+                            "printedName": "CoreFoundation.CGSize",
+                            "usr": "c:@S@CGSize"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "SwiftUI.Animation?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Animation",
+                                "printedName": "SwiftUI.Animation",
+                                "usr": "s:7SwiftUI9AnimationV"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
                       }
                     ]
                   }
@@ -6209,14 +6230,15 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:7PlaySDK13UIKitBaseViewC8onResizeySo6CGSizeVcSgvp",
-            "mangledName": "$s7PlaySDK13UIKitBaseViewC8onResizeySo6CGSizeVcSgvp",
+            "usr": "s:7PlaySDK13UIKitBaseViewC8onResizeySo6CGSizeV_7SwiftUI9AnimationVSgtcSgvp",
+            "mangledName": "$s7PlaySDK13UIKitBaseViewC8onResizeySo6CGSizeV_7SwiftUI9AnimationVSgtcSgvp",
             "moduleName": "PlaySDK",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
               "Custom",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -6228,12 +6250,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "((CoreFoundation.CGSize) -> ())?",
+                    "printedName": "((CoreFoundation.CGSize, SwiftUI.Animation?) -> ())?",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(CoreFoundation.CGSize) -> ()",
+                        "printedName": "(CoreFoundation.CGSize, SwiftUI.Animation?) -> ()",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -6242,9 +6264,30 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "CGSize",
-                            "printedName": "CoreFoundation.CGSize",
-                            "usr": "c:@S@CGSize"
+                            "name": "Tuple",
+                            "printedName": "(CoreFoundation.CGSize, SwiftUI.Animation?)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "CGSize",
+                                "printedName": "CoreFoundation.CGSize",
+                                "usr": "c:@S@CGSize"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "SwiftUI.Animation?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Animation",
+                                    "printedName": "SwiftUI.Animation",
+                                    "usr": "s:7SwiftUI9AnimationV"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ]
                           }
                         ]
                       }
@@ -6253,8 +6296,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7PlaySDK13UIKitBaseViewC8onResizeySo6CGSizeVcSgvg",
-                "mangledName": "$s7PlaySDK13UIKitBaseViewC8onResizeySo6CGSizeVcSgvg",
+                "usr": "s:7PlaySDK13UIKitBaseViewC8onResizeySo6CGSizeV_7SwiftUI9AnimationVSgtcSgvg",
+                "mangledName": "$s7PlaySDK13UIKitBaseViewC8onResizeySo6CGSizeV_7SwiftUI9AnimationVSgtcSgvg",
                 "moduleName": "PlaySDK",
                 "genericSig": "<τ_0_0, τ_0_1>",
                 "sugared_genericSig": "<VariableContainerType, ClassType>",
@@ -6274,12 +6317,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "((CoreFoundation.CGSize) -> ())?",
+                    "printedName": "((CoreFoundation.CGSize, SwiftUI.Animation?) -> ())?",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(CoreFoundation.CGSize) -> ()",
+                        "printedName": "(CoreFoundation.CGSize, SwiftUI.Animation?) -> ()",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -6288,9 +6331,30 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "CGSize",
-                            "printedName": "CoreFoundation.CGSize",
-                            "usr": "c:@S@CGSize"
+                            "name": "Tuple",
+                            "printedName": "(CoreFoundation.CGSize, SwiftUI.Animation?)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "CGSize",
+                                "printedName": "CoreFoundation.CGSize",
+                                "usr": "c:@S@CGSize"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "SwiftUI.Animation?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "Animation",
+                                    "printedName": "SwiftUI.Animation",
+                                    "usr": "s:7SwiftUI9AnimationV"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ]
                           }
                         ]
                       }
@@ -6299,8 +6363,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7PlaySDK13UIKitBaseViewC8onResizeySo6CGSizeVcSgvs",
-                "mangledName": "$s7PlaySDK13UIKitBaseViewC8onResizeySo6CGSizeVcSgvs",
+                "usr": "s:7PlaySDK13UIKitBaseViewC8onResizeySo6CGSizeV_7SwiftUI9AnimationVSgtcSgvs",
+                "mangledName": "$s7PlaySDK13UIKitBaseViewC8onResizeySo6CGSizeV_7SwiftUI9AnimationVSgtcSgvs",
                 "moduleName": "PlaySDK",
                 "genericSig": "<τ_0_0, τ_0_1>",
                 "sugared_genericSig": "<VariableContainerType, ClassType>",
@@ -6319,8 +6383,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7PlaySDK13UIKitBaseViewC8onResizeySo6CGSizeVcSgvM",
-                "mangledName": "$s7PlaySDK13UIKitBaseViewC8onResizeySo6CGSizeVcSgvM",
+                "usr": "s:7PlaySDK13UIKitBaseViewC8onResizeySo6CGSizeV_7SwiftUI9AnimationVSgtcSgvM",
+                "mangledName": "$s7PlaySDK13UIKitBaseViewC8onResizeySo6CGSizeV_7SwiftUI9AnimationVSgtcSgvM",
                 "moduleName": "PlaySDK",
                 "genericSig": "<τ_0_0, τ_0_1>",
                 "sugared_genericSig": "<VariableContainerType, ClassType>",
@@ -6330,9 +6394,145 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "layoutSuperviewOnAnimation",
+            "printedName": "layoutSuperviewOnAnimation",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7PlaySDK13UIKitBaseViewC26layoutSuperviewOnAnimationSbvp",
+            "mangledName": "$s7PlaySDK13UIKitBaseViewC26layoutSuperviewOnAnimationSbvp",
+            "moduleName": "PlaySDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "Custom",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7PlaySDK13UIKitBaseViewC26layoutSuperviewOnAnimationSbvg",
+                "mangledName": "$s7PlaySDK13UIKitBaseViewC26layoutSuperviewOnAnimationSbvg",
+                "moduleName": "PlaySDK",
+                "genericSig": "<τ_0_0, τ_0_1>",
+                "sugared_genericSig": "<VariableContainerType, ClassType>",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7PlaySDK13UIKitBaseViewC26layoutSuperviewOnAnimationSbvs",
+                "mangledName": "$s7PlaySDK13UIKitBaseViewC26layoutSuperviewOnAnimationSbvs",
+                "moduleName": "PlaySDK",
+                "genericSig": "<τ_0_0, τ_0_1>",
+                "sugared_genericSig": "<VariableContainerType, ClassType>",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7PlaySDK13UIKitBaseViewC26layoutSuperviewOnAnimationSbvM",
+                "mangledName": "$s7PlaySDK13UIKitBaseViewC26layoutSuperviewOnAnimationSbvM",
+                "moduleName": "PlaySDK",
+                "genericSig": "<τ_0_0, τ_0_1>",
+                "sugared_genericSig": "<VariableContainerType, ClassType>",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "nodeView",
+            "printedName": "nodeView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7PlaySDK13UIKitBaseViewC04nodeE0So6UIViewCvp",
+            "mangledName": "$s7PlaySDK13UIKitBaseViewC04nodeE0So6UIViewCvp",
+            "moduleName": "PlaySDK",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7PlaySDK13UIKitBaseViewC04nodeE0So6UIViewCvg",
+                "mangledName": "$s7PlaySDK13UIKitBaseViewC04nodeE0So6UIViewCvg",
+                "moduleName": "PlaySDK",
+                "genericSig": "<τ_0_0, τ_0_1>",
+                "sugared_genericSig": "<VariableContainerType, ClassType>",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "initialize",
-            "printedName": "initialize(engine:playId:)",
+            "printedName": "initialize(engine:playId:isSwiftUI:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6350,17 +6550,54 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7PlaySDK13UIKitBaseViewC10initialize6engine6playIdyAA0A13RuntimeEngineC_SStF",
-            "mangledName": "$s7PlaySDK13UIKitBaseViewC10initialize6engine6playIdyAA0A13RuntimeEngineC_SStF",
+            "usr": "s:7PlaySDK13UIKitBaseViewC10initialize6engine6playId9isSwiftUIyAA0A13RuntimeEngineC_SSSbtF",
+            "mangledName": "$s7PlaySDK13UIKitBaseViewC10initialize6engine6playId9isSwiftUIyAA0A13RuntimeEngineC_SSSbtF",
             "moduleName": "PlaySDK",
             "genericSig": "<τ_0_0, τ_0_1>",
             "sugared_genericSig": "<VariableContainerType, ClassType>",
             "declAttributes": [
               "Custom",
               "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isSwiftUI",
+            "printedName": "isSwiftUI(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DynamicSelf",
+                "printedName": "Self"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7PlaySDK13UIKitBaseViewC9isSwiftUIyACyxq_GXDSbF",
+            "mangledName": "$s7PlaySDK13UIKitBaseViewC9isSwiftUIyACyxq_GXDSbF",
+            "moduleName": "PlaySDK",
+            "genericSig": "<τ_0_0, τ_0_1>",
+            "sugared_genericSig": "<VariableContainerType, ClassType>",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "DiscardableResult"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -6599,6 +6836,62 @@
             "genericSig": "<τ_0_0, τ_0_1, τ_1_0>",
             "sugared_genericSig": "<VariableContainerType, ClassType, T>",
             "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setState",
+            "printedName": "setState(view:stateId:runLayout:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIKitBaseView",
+                "printedName": "PlaySDK.UIKitBaseView<τ_0_0, τ_0_1>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ],
+                "usr": "s:7PlaySDK13UIKitBaseViewC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7PlaySDK13UIKitBaseViewC8setState4view7stateId9runLayoutyACyxq_G_SSSbtFZ",
+            "mangledName": "$s7PlaySDK13UIKitBaseViewC8setState4view7stateId9runLayoutyACyxq_G_SSSbtFZ",
+            "moduleName": "PlaySDK",
+            "genericSig": "<τ_0_0, τ_0_1>",
+            "sugared_genericSig": "<VariableContainerType, ClassType>",
+            "static": true,
+            "declAttributes": [
+              "Final",
               "Custom",
               "AccessControl"
             ],
@@ -8121,15 +8414,43 @@
     },
     {
       "filePath": "\/Users\/tomomalley\/dev\/Play\/play-catalyst-app\/PlaySDK\/SDKLocalPackage\/Sources\/UIKitBaseView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 855,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/tomomalley\/dev\/Play\/play-catalyst-app\/PlaySDK\/SDKLocalPackage\/Sources\/UIKitBaseView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1247,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/tomomalley\/dev\/Play\/play-catalyst-app\/PlaySDK\/SDKLocalPackage\/Sources\/UIKitBaseView.swift",
       "kind": "Array",
-      "offset": 1260,
+      "offset": 1401,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/tomomalley\/dev\/Play\/play-catalyst-app\/PlaySDK\/SDKLocalPackage\/Sources\/UIKitBaseView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6286,
+      "offset": 1728,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/tomomalley\/dev\/Play\/play-catalyst-app\/PlaySDK\/SDKLocalPackage\/Sources\/UIKitBaseView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6772,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/tomomalley\/dev\/Play\/play-catalyst-app\/PlaySDK\/SDKLocalPackage\/Sources\/UIKitBaseView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8477,
       "length": 5,
       "value": "false"
     },
