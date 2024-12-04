@@ -242,6 +242,7 @@ public class GlobalObject<VariableContainerType> : PlaySDK.PlayAPIVariableWrappe
   @_Concurrency.MainActor(unsafe) public func setVariable<T>(keyPath: Swift.KeyPath<VariableContainerType, T>, value: Any?)
   @_Concurrency.MainActor(unsafe) public func getVariablee<T>(keyPath: Swift.KeyPath<VariableContainerType, T>) -> Any?
   @_Concurrency.MainActor(unsafe) public static func setState(view: PlaySDK.UIKitBaseView<VariableContainerType, ClassType>, stateId: Swift.String, runLayout: Swift.Bool = false)
+  @_Concurrency.MainActor(unsafe) public static func getCurrentState(view: PlaySDK.UIKitBaseView<VariableContainerType, ClassType>) -> Swift.String
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }

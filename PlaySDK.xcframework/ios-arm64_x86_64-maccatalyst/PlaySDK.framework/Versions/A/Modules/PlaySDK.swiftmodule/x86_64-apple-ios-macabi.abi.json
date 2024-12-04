@@ -6898,6 +6898,50 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "getCurrentState",
+            "printedName": "getCurrentState(view:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIKitBaseView",
+                "printedName": "PlaySDK.UIKitBaseView<τ_0_0, τ_0_1>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ],
+                "usr": "s:7PlaySDK13UIKitBaseViewC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7PlaySDK13UIKitBaseViewC15getCurrentState4viewSSACyxq_G_tFZ",
+            "mangledName": "$s7PlaySDK13UIKitBaseViewC15getCurrentState4viewSSACyxq_G_tFZ",
+            "moduleName": "PlaySDK",
+            "genericSig": "<τ_0_0, τ_0_1>",
+            "sugared_genericSig": "<VariableContainerType, ClassType>",
+            "static": true,
+            "declAttributes": [
+              "Custom",
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(frame:)",
@@ -8443,14 +8487,14 @@
     {
       "filePath": "\/Users\/tomomalley\/dev\/Play\/play-catalyst-app\/PlaySDK\/SDKLocalPackage\/Sources\/UIKitBaseView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6772,
+      "offset": 6902,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tomomalley\/dev\/Play\/play-catalyst-app\/PlaySDK\/SDKLocalPackage\/Sources\/UIKitBaseView.swift",
       "kind": "BooleanLiteral",
-      "offset": 8477,
+      "offset": 8607,
       "length": 5,
       "value": "false"
     },

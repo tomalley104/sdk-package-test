@@ -22,14 +22,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+hQ9+10oqeoRGScKs/J0K+hVBCxGm1LKuY/ClWAYKNE=
+			VuSfx6Y9rqzEIUIrappKcsYx+4qwAnj1tAisfpeo9LE=
 			</data>
 		</dict>
 		<key>Modules/PlaySDK.swiftmodule/arm64-apple-ios-macabi.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jg0VCeicX73CS+xsbTvgud57lxvhMjd4DEKxoq6kBRY=
+			NIi6xVEKM68avFyNNhTGeaKd6VLhuMWABNPnIlyZV/0=
 			</data>
 		</dict>
 		<key>Modules/PlaySDK.swiftmodule/arm64-apple-ios-macabi.swiftdoc</key>
@@ -43,28 +43,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jg0VCeicX73CS+xsbTvgud57lxvhMjd4DEKxoq6kBRY=
+			NIi6xVEKM68avFyNNhTGeaKd6VLhuMWABNPnIlyZV/0=
 			</data>
 		</dict>
 		<key>Modules/PlaySDK.swiftmodule/arm64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2vOHYIj/udJaScT+zBQ1+CjPk3SUhvFgWGwt/Oa43RY=
+			FX31b2o8g4jVukS7e54iiTF98uMJ4TYPTHXsl3G2sn4=
 			</data>
 		</dict>
 		<key>Modules/PlaySDK.swiftmodule/x86_64-apple-ios-macabi.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+hQ9+10oqeoRGScKs/J0K+hVBCxGm1LKuY/ClWAYKNE=
+			VuSfx6Y9rqzEIUIrappKcsYx+4qwAnj1tAisfpeo9LE=
 			</data>
 		</dict>
 		<key>Modules/PlaySDK.swiftmodule/x86_64-apple-ios-macabi.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PwbT3FwAdewLH/JoVP0E3Bmq8oy5UxHDQZswZeWarrU=
+			r5a3v1pHL+tmn2qdKVyqY/NL++coBS5sucMkqMWAst8=
 			</data>
 		</dict>
 		<key>Modules/PlaySDK.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
@@ -78,14 +78,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PwbT3FwAdewLH/JoVP0E3Bmq8oy5UxHDQZswZeWarrU=
+			r5a3v1pHL+tmn2qdKVyqY/NL++coBS5sucMkqMWAst8=
 			</data>
 		</dict>
 		<key>Modules/PlaySDK.swiftmodule/x86_64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zdMqPeen9xwB6PG3DKwOhgSacRY96rdTBXjRD/8CUcM=
+			p2Y35IpWQiGYjCpCMq3eG2uM3E3iL7B9W+3U6basba8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
